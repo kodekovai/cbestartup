@@ -1,3 +1,48 @@
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url("RobotoCondensed-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: italic;
+    font-weight: 300;
+    src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'), url("RobotoCondensed-LightItalic.ttf") format('truetype');
+}
+/* Normal */
+
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url("RobotoCondensed-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Roboto Condensed";
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Condensed Italic'), local('RobotoCondensed-Italic'), url("RobotoCondensed-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'), url(http://themes.googleusercontent.com/static/fonts/roboto/v11/1pO9eUAp8pSF8VnRTP3xnvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   border: 0;
@@ -32,9 +77,8 @@ table {
 /* Clearfix */
 /* Global */
 body {
-  font: 16px/1 "Avenir LT W01_45 Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  font-family: 'Roboto';
+    font-size: 15px;
   color: #777; }
 
 p {
@@ -63,7 +107,8 @@ header {
     font-size: 14px; }
     header #login a {
       color: #03d79f;
-      font-family: 'Avenir LT W01_85 Heavy'; }
+      font-family: 'Roboto';
+    font-size: 15px; }
       header #login a:hover {
         text-decoration: underline; }
   header .wrapper {
@@ -74,8 +119,9 @@ header {
     letter-spacing: 2px; }
   header h1 {
     color: #fff;
-    font-family: 'Avenir LT W01_85 Heavy';
-    font-size: 50px;
+    font-weight: bold;
+  font-family: 'Open Sans';
+  font-size: 55px;
     text-transform: uppercase;
     letter-spacing: 8px;
     margin: 10px 0 40px 0; }
@@ -84,7 +130,8 @@ header {
     font-size: 18px;
     max-width: 600px;
     margin: 0 auto;
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+     padding : 20px; }
   header #read {
     color: #03d79f;
     text-transform: uppercase;
@@ -103,7 +150,7 @@ header {
   color: #fff;
   display: inline-block;
   font-size: 18px;
-  font-family: 'Avenir LT W01_85 Heavy'; }
+  font-family: 'Roboto'; }
   .button:hover {
     background: #06c391; }
 
@@ -128,7 +175,8 @@ section.wrapper {
         width: 100%;
         margin-right: 0; } }
     section.wrapper .sidebar h2 {
-      font-family: 'Avenir LT W01_85 Heavy';
+      font-family: 'Roboto';
+      
       text-transform: uppercase;
       font-size: 24px;
       color: #251d35;
@@ -163,7 +211,8 @@ section.wrapper ul li a {
 }
       section.wrapper ul li:hover > a div {
         display: block; 
-	background: rgba(27, 29, 52, 0.9);	
+	background: #251d35;
+		
 }
         @media (max-width: 550px) {
           section.wrapper ul li:hover > div {
@@ -182,7 +231,7 @@ section.wrapper ul li a {
         /*display: none;*/ 
 }
         section.wrapper ul li div h3 {
-          font-family: 'Avenir LT W01_95 Black';
+          font-family: 'Roboto';
           color: #fff;
           font-size: 22px;
           line-height: 1.3; }
@@ -238,11 +287,10 @@ svg path.lettering {
   text-align: center;
   padding: 40px 0; }
   #bottom p {
-    font-family: 'Avenir LT W01_55 Roman';
+    font-family: 'Roboto';
     font-size: 18px;
     color: #cfced1;
     margin-bottom: 20px; }
-
 footer.wrapper {
   text-align: center;
   padding: 20px 0 30px 0; }
@@ -251,7 +299,7 @@ footer.wrapper {
     footer.wrapper svg path {
       fill: #E32929; }
   footer.wrapper p {
-    font-family: 'Avenir LT W01_85 Heavy';
+    font-family: 'Roboto';
     color: #bdbbbf; }
 
 /*# sourceMappingURL=style.css.map */
